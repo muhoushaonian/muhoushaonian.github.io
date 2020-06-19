@@ -2,7 +2,7 @@
 layout: post
 title: 高可靠/带有负载均衡的CockroachDB搭建
 description: Nope
-tag: 数据结构
+tag: 产品开发
 ---
 
 ### CockroachDB搭建
