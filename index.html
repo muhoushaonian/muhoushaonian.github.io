@@ -241,55 +241,16 @@
 
   <div id="pmlr-v162-cantelobre22a" class="col-sm-8">
     
-      <div class="title">Measuring dissimilarity with diffeomorphism invariance</div>
+      <div class="title">Federated Learning on Riemannian Manifolds: A Gradient-Free Projection-Based Approach</div>
       <div class="author">
-        
-          
-            
-              
-                <em>Zhaoye Pan</em>,
-              
-            
-          
-        
-          
-            
-              
-                
-                  <a href="https://cciliber.github.io/" target="_blank">Carlo Ciliberto</a>,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  <a href="https://bguedj.github.io" target="_blank">Benjamin Guedj</a>,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and <a href="https://www.di.ens.fr/~rudi/" target="_blank">Alessandro Rudi</a>
-                
-              
-            
-          
-        
+         Hongye Wang, <em>Zhaoye Pan</em>, Chang He, Jiaxiang Li, Bo Jiang
       </div>
 
       <div class="periodical">
       
-        <em>In Proceedings of the 39th International Conference on Machine Learning</em>
       
-      
-        2022
+        <em>arXiv 2507.22855,</em>
+        2025
       
       </div>
     
@@ -300,19 +261,19 @@
     
     
     
-      <a href="https://proceedings.mlr.press/v162/cantelobre22a.html" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+      <a href="https://arxiv.org/abs/2507.22855" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     
-    
+    <!-- 
       
       <a href="https://proceedings.mlr.press/v162/cantelobre22a/cantelobre22a.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       
-    
-    
+     -->
+    <!-- 
     
     
       <a href="https://github.com/theophilec/diffy" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
     
-    
+     -->
     
     
     </div>
@@ -320,8 +281,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>Measures of similarity (or dissimilarity) are a key ingredient to many machine learning algorithms. We introduce DID, a pairwise dissimilarity measure applicable to a wide range of data spaces, which leverages the data’s internal structure to be invariant to diffeomorphisms. We prove that DID enjoys properties which make it relevant for theoretical study and practical use. By representing each datum as a function, DID is defined as the solution to an optimization problem in a
-                Reproducing Kernel Hilbert Space and can be expressed in closed-form. In practice, it can be efficiently approximated via Nyström sampling. Empirical experiments support the merits of DID.</p>
+      <p>collaborative model training across distributed clients while preserving data privacy. However, existing FL algorithms predominantly focus on unconstrained optimization problems with exact gradient information, limiting its applicability in scenarios where only noisy function evaluations are accessible or where model parameters are constrained. To address these challenges, we propose a novel zeroth-order projection-based algorithm on Riemannian manifolds for FL. By leveraging the projection operator, we introduce a computationally efficient zeroth-order Riemannian gradient estimator. Unlike existing estimators, ours requires only a simple Euclidean random perturbation, eliminating the need to sample random vectors in the tangent space, thus reducing computational cost. Theoretically, we first prove the approximation properties of the estimator and then establish the sublinear convergence of the proposed algorithm, matching the rate of its first-order counterpart. Numerically, we first assess the efficiency of our estimator using kernel principal component analysis. Furthermore, we apply the proposed algorithm to two real-world scenarios: zeroth-order attacks on deep neural networks and low-rank neural network training to validate the theoretical findings.</p>
     </div>
     
   </div>
@@ -334,55 +294,17 @@
 
   <div id="cantelobre2020pacbayesian" class="col-sm-8">
     
-      <div class="title">A PAC-Bayesian Perspective on Structured Prediction with Implicit Loss Embeddings</div>
+      <div class="title">Riemannian accelerated zeroth-order algorithm: improved robustness and lower query complexity</div>
       <div class="author">
-        
-          
-            
-              
-                <em>Zhaoye Pan</em>,
-              
-            
-          
-        
-          
-            
-              
-                
-                  <a href="https://bguedj.github.io" target="_blank">Benjamin Guedj</a>,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  <a href="http://mariaperezortiz.com/" target="_blank">María Pérez-Ortiz</a>,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and <a href="http://www0.cs.ucl.ac.uk/staff/J.Shawe-Taylor/" target="_blank">John Shawe-Taylor</a>
-                
-              
-            
-          
-        
+        Chang He, <em>Zhaoye Pan</em>, Xiao Wang, Bo Jiang
       </div>
 
       <div class="periodical">
       
-        <em>arXiv 2012.03780,</em>
+        <em>Proceedings of the 41st International Conference on Machine Learning</em>
       
       
-        2020
+        2024
       
       </div>
     
@@ -395,13 +317,8 @@
     
     
       
-      <a href="https://arxiv.org/pdf/2012.03780.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-      
-    
-    
-    
-    
-    
+      <a href="https://proceedings.mlr.press/v235/he24h.html" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+
     
     
     </div>
@@ -409,7 +326,7 @@
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>Many practical machine learning tasks can be framed as Structured prediction problems, where several output variables are predicted and considered interdependent. Recent theoretical advances in structured prediction have focused on obtaining fast rates convergence guarantees, especially in the Implicit Loss Embedding (ILE) framework. PAC-Bayes has gained interest recently for its capacity of producing tight risk bounds for predictor distributions. This work proposes a novel PAC-Bayes perspective on the ILE Structured prediction framework. We present two generalization bounds, on the risk and excess risk, which yield insights into the behavior of ILE predictors. Two learning algorithms are derived from these bounds. The algorithms are implemented and their behavior analyzed, with source code available at <a href="https://github.com/theophilec/PAC-Bayes-ILE-Structured-Prediction">this link</a>.</p>
+      <p>Optimization problems with access to only zeroth-order information of the objective function on Riemannian manifolds arise in various applications, spanning from statistical learning to robot learning. While various zeroth-order algorithms have been proposed in Euclidean space, they are not inherently designed to handle the challenging constraints imposed by Riemannian manifolds. The proper adaptation of zeroth-order techniques to Riemannian manifolds remained unknown until the pioneering work of \cite{li2023stochastic}. However, zeroth-order algorithms are widely observed to converge slowly and be unstable in practice. To alleviate these issues, we propose a Riemannian accelerated zeroth-order algorithm with improved robustness. Regarding efficiency, our accelerated algorithm has the function query complexity of $\mathcal{O}(\epsilon^{-7/4}d)$ for finding an $\epsilon$-approximate first-order stationary point. By introducing a small perturbation, it exhibits a function query complexity of $\tilde{\mathcal{O}}(\epsilon^{-7/4}d)$ for seeking a second-order stationary point with a high probability, matching state-of-the-art result in Euclidean space. Moreover, we further establish the almost sure convergence in the asymptotic sense through the Stable Manifold Theorem. Regarding robustness, our algorithm requires larger smoothing parameters in the order of $\tilde{\mathcal{O}}(\epsilon^{7/8}d^{-1/2})$, improving the existing result by a factor of $\tilde{\mathcal{O}}(\epsilon^{3/4})$.</p>
     </div>
     
   </div>
@@ -422,55 +339,17 @@
 
   <div id="cantelobre2020iros" class="col-sm-8">
     
-      <div class="title">A real-time unscented Kalman filter on manifolds for challenging AUV navigation</div>
+      <div class="title">An Efficient Hierarchical Block Coordinate Descent Method for Time-Varying Graphical Lasso</div>
       <div class="author">
-        
-          
-            
-              
-                <em>Zhaoye Pan</em>,
-              
-            
-          
-        
-          
-            
-              
-                
-                  <a href="https://www.linkedin.com/in/cl%C3%A9ment-chahbazian-272505129" target="_blank">Clément Chahbazian</a>,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  <a href="https://www.linkedin.com/in/arnaud-croux-28155512/" target="_blank">Arnaud Croux</a>,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and <a href="http://www.silvere-bonnabel.com/" target="_blank">Silvère Bonnabel</a>
-                
-              
-            
-          
-        
+        <em>Zhaoye Pan</em>, Xiaolu Wang, Huikang Liu, Jun Zhang  
       </div>
 
       <div class="periodical">
       
-        <em>In 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>
+        <em>In 2024 IEEE International Conference on Acoustics, Speech and Signal Processing(ICASSP)</em>
       
       
-        2020
+        2024
       
       </div>
     
@@ -478,37 +357,100 @@
     <div class="links">
     
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-    
-    
-    
-    
-      
-      <a href="https://hal-mines-paristech.archives-ouvertes.fr/hal-02915271/document" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-      
-    
-    
-    
-    
-    
-    
-    
+
+      <a href="https://ieeexplore.ieee.org/abstract/document/10446070" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+        
     </div>
 
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>We consider the problem of localization and navigation of Autonomous Underwater Vehicles (AUV) in the context of high performance subsea asset inspection missions in deep water. We propose a solution based on the recently introduced Unscented Kalman Filter on Manifolds (UKF-M) for onboard navigation to estimate the robot’s location, attitude and velocity, using a precise round and rotating Earth navigation model. Our algorithm has the merit of seamlessly handling nonlinearity of attitude, and is far simpler to implement than the extended Kalman filter (EKF), which is widely used in the navigation industry. The unscented transform notably spares the user the computation of Jacobians and lends itself well to fast prototyping in the context of multi-sensor data fusion. Besides, we provide the community with feedback about implementation, and execution time is shown to be compatible with real-time. Realistic extensive Monte-Carlo simulations prove uncertainty is estimated with accuracy by the filter, and illustrate its convergence ability. Real experiments in the context of a 900m deep dive near Marseille (France) illustrate the relevance of the method.</p>
-    </div>
+      <p>Time-varying graphical LASSO (TVGL) aims to infer a sequence of graphs from time series data and has been widely used in many statistical inference problems. The existing algorithms usually suffer from high computational cost when solving large-scale TVGL problems. In this paper, we develop an efficient and scalable hierarchical block coordinate descent (HBCD) method for solving TVGL with smooth temporal difference prior. The proposed HBCD method contains both outer-loop and inner-loop BCD iterations. The outer loops seperate the original TVGL problem into a sequence of subproblems, which are variants of the static graphical LASSO problems. Then, we propose an efficient BCD method to solve the inner-loop subproblems. We provide theoretical analysis that indicates the linear convergence of our proposed method. Furthermore, numerical experiments on both synthetic and real datasets show that our method significantly outperforms the state-of-the-art algorithm in terms of both the required iterations and CPU time to reach the target precision.</p>
     
   </div>
 </div>
-</li></ol>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="cantelobre2020iros" class="col-sm-8">
+    
+      <div class="title">Utilizing second-order information in noisy information-sharing environments for distributed optimization</div>
+      <div class="author">
+        <em>Zhaoye Pan</em>, Haoqi Yang, Huikang Liu
+      </div>
+
+      <div class="periodical">
+      
+        <em>In 2024 IEEE International Conference on Acoustics, Speech and Signal Processing(ICASSP)</em>
+      
+      
+        2024
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+
+      <a href="https://ieeexplore.ieee.org/abstract/document/10447051" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+        
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Decentralized optimization aims to cooperatively solve a global finite-sum loss function, where each agent only possesses knowledge of its own local function. Real-world applications introduce challenges such as unstable channels and differential privacy concerns, necessitating the development of more robust algorithms. This paper proposes a framework that explores second-order information using two approaches: global Newton tracking and local Newton preconditioning. Furthermore, we adapt a generic convergence result for gradient tracking methods to demonstrate the almost sure convergence property of both schemes under specific conditions. To validate the effectiveness of the proposed algorithm, numerical experiments are conducted on synthetic and real datasets, showcasing its robustness and superior accuracy compared to existing first-order methods.</p>
+  </div>
+</div>
+</li>
+<li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="cantelobre2020iros" class="col-sm-8">
+    
+      <div class="title">A Fully Asynchronous Newton Tracking Method for Decentralized Optimization</div>
+      <div class="author">
+        <em>Zhaoye Pan</em>, Huikang Liu
+      </div>
+
+      <div class="periodical">
+      
+        <em>In 2023 62nd IEEE Conference on Decision and Control (CDC)</em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+
+      <a href="https://ieeexplore.ieee.org/abstract/document/10384028" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+        
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We consider fully asynchronous decentralized optimization over a directed graph. While various algorithms have been proposed, real-world applications require relaxing the assumption and considering communication networks with asynchronous and heterogeneous nodes. To meet these challenges, we propose an efficient and robust Newton tracking mechanism for fully asynchronous optimization. Our proposed mechanism can be adapted to different asynchronous first-order methods as required by the practical context. Through the theoretical analysis we demonstrate the R-linear rate of our method and derive an explicit expression of decaying factor under local conditions. Furthermore, numerical comparison with existing algorithms support the efficiency and robustness of our method.</p>
+    </div>
+</div>
+</li>
+  </ol>
 </div>
 
     
 
     
-    <div class="social">
+    <!-- <div class="social">
       <span class="contact-icon text-center">
   <a href="mailto:%66%69%72%73%74%64%6F%74%6C%61%73%74%61%74%69%6E%72%69%61%64%6F%74%66%72"><i class="fas fa-envelope"></i></a>
   
@@ -533,7 +475,7 @@
 
 </div>
 
-    </div>
+    </div> -->
 
     <!-- Footer -->
 
